@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmargene <mmargene@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/27 13:39:55 by mmargene          #+#    #+#             */
+/*   Updated: 2021/12/27 14:12:27 by mmargene         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-static int	ft_intlen (int nb)
+static int	ft_intlen(int nb)
 {
 	size_t	len;
 
@@ -18,7 +30,7 @@ static int	ft_intlen (int nb)
 	return (len);
 }
 
-static char	ft_nstr (char *str, int n, int i)
+static char	ft_nstr(char *str, int n, int i)
 {
 	str[i--] = '\0';
 	if (n == 0)
@@ -39,7 +51,7 @@ static char	ft_nstr (char *str, int n, int i)
 	return (*str);
 }
 
-char	*ft_itoa (int nb)
+char	*ft_itoa(int nb)
 {
 	int		n;
 	int		i;
